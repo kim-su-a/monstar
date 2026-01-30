@@ -1,0 +1,241 @@
+@charset "utf-8";
+/* body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+} */
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    color: #353230;
+}
+ul,ol{
+    list-style: none;
+}
+html{
+    font-size: 18px ;
+    line-height: 1.42;
+    color: #353230 ;
+}
+body{
+    font-family: 'Noto Color Emoji', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #353230;
+    padding-top: 70px ;
+}
+#wrap{
+    min-width: 1340px;
+}
+h1{
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* -----header----- */
+#header {
+    height: 70px ;
+    border-bottom: 2px solid #da001e;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% ;
+    z-index: 999;
+}
+.header_inner {
+    width: 1320px ;
+    margin: 0 auto;
+    height: 70px ;
+    position: relative;
+}
+
+.logo {
+    width: 231px;
+    position: absolute;
+    top: 12px ;
+    left: 0;
+}
+#nav {
+    /* background-color: bisque; */
+    height: 70px ;
+    text-align: center;
+    padding-top: 7px ;
+    float:right;
+    box-sizing: border-box;
+}
+.gnb {
+    display: inline-block;
+}
+.gnb> li {
+    float: left;
+}
+.gnb> li> a {
+    color: #353230 ;
+    display: block;
+    padding: 16px 30px 23px 50px;
+    font-weight: bold;
+    /* background-color: red; */
+}
+.gnb> li> a:hover {
+    color: #da001e ;
+}
+
+/* -----quick_menu----- */
+#quick_menu {
+    width: 1320px ;
+    margin: 0 auto;
+    height: 25px ;
+    /* background-color: red; */
+    margin-bottom: 60px ;
+}
+.quick_menu_wrap {
+    /* 자식요소 float */
+    width: 1100px ;
+    height: 100px ;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 4% ;
+    /* background-color: orange; */
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+}
+.quick_menu_wrap> li> a {
+    display: inline-block;
+    width: 190px ;
+    height: 65px ;
+    padding-top: 10% ;
+    box-sizing: border-box;
+    border: 2px solid #f0f0f0;
+    background-color: #f8f7f7 ;
+    border-radius: 45px;
+    font-weight: 600;
+}
+.quick_menu_wrap> li> a:hover {
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #da001e;
+    background: #da001e;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* -----akaibeu----- */
+#akaibeu {
+    text-align: center;
+    padding: 15px 20px 65px 20px;
+    box-sizing: border-box;
+    background-color: #fff; /* 필요시 */
+  }
+  .review_title {
+    margin: 30px 0 10px;
+}
+  .akaibeu_list_wrap {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  
+  .product_name {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #353230;
+}
+
+.product_price {
+    font-size: 15px;
+    color: #777;
+    margin-top: 5px;
+  }
+
+  .product_card {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .product_card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  .product_card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .product_info {
+    padding: 15px 10px;
+    text-align: center;
+  }
+  
+  .product_name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .product_price {
+    font-size: 15px;
+    color: #555;
+  }
+  
+  .product_price del {
+    color: #aaa;
+    margin-right: 6px;
+    font-size: 14px;
+  }
+  
+  .product_price .discount {
+    color: #da001e;
+    font-weight: bold;
+  }
+
+  .akaibeu_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* 아이템 간 간격 */
+    padding-top: 50px;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .akaibeu_list li {
+    width: calc((100% - 60px) / 4); /* 4개 + 3개의 gap(20px * 3 = 60px) */
+    box-sizing: border-box;
+  }
+  
+.akaibeu_list> li> .akaibeu_on a img:hover {
+    overflow: hidden;
+    border-radius: 19px ;
+    box-shadow: 0px 0px 3px rgba(24, 21, 19, 0.5);
+}
+
+/* -----footer----- */
+#footer {
+    height: 135px ;
+    border-top: 1px solid #353230;
+    font-size: 14px ;
+    /* background-color: orange ; */
+}
+.link_address {
+    width: 1320px ;
+    margin: 0 auto;    
+    height: 100px ;
+    padding: 30px 0 0 ;
+    background: url(../images/footer/monstargear.png) no-repeat left top;
+    background-position: left 25px;
+    /* background-color: red; */
+}
+.footer_address {
+    padding-left: 235px ;
+}
