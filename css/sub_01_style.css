@@ -93,7 +93,7 @@ h1{
 }
 .quick_menu_wrap {
     /* 자식요소 float */
-    width: 1100px ;
+    width: 1250px ;
     height: 100px ;
     margin: 0 auto;
     text-align: center;
@@ -202,12 +202,12 @@ h1{
   .akaibeu_list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* 아이템 간 간격 */
+    justify-content: flex-start; /* 왼쪽부터 정렬 */
+    gap: 20px;
     padding-top: 50px;
     margin: 0;
     list-style: none;
-  }
+}
   
   .akaibeu_list li {
     width: calc((100% - 60px) / 4); /* 4개 + 3개의 gap(20px * 3 = 60px) */
