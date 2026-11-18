@@ -122,10 +122,10 @@ h1{
     display: block;
     border-radius: 19px;
   }
-.akaibeu_list> li> .akaibeu_on a img:hover {
+.akaibeu_list> li> .akaibeu_on a img {
     overflow: hidden;
     border-radius: 19px ;
-    box-shadow: 0px 0px 3px rgba(24, 21, 19, 0.5);
+    box-shadow: 0px 0px 3px rgba(24, 21, 19, 0.2);
 }
 
 /* -----footer----- */
@@ -146,4 +146,33 @@ h1{
 }
 .footer_address {
     padding-left: 235px ;
+}
+
+/* 이미지 확대 팝업 */
+.image_popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.image_popup img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.close_btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
 }
