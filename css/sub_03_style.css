@@ -79,8 +79,10 @@ h1{
     font-weight: bold;
     /* background-color: red; */
 }
-.gnb> li> a:hover {
-    color: #da001e ;
+
+.gnb > li > a:hover,
+.gnb > li > a.active {
+    color: #da001e;
 }
 
 
