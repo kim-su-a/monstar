@@ -26,7 +26,7 @@
 
                 <nav id="nav">
                     <ul class="gnb">
-                        <li><a href="../sub_01.html">제품 상세페이지</a></li>
+                        <li><a href="../sub_01.html" class="active">제품 상세페이지</a></li>
                         <li><a href="../sub_02.html">패키지디자인</a></li>
                         <li><a href="../sub_03.html">배너디자인</a></li>
                         <li><a href="../sub_04.html">유튜브 썸네일</a></li>
@@ -36,79 +36,93 @@
             </div>
         </div>
 
-        <!-- ▣ PRODUCT DETAIL -->
-        <section id="product_detail">
-            <div class="product-detail-container">
-                <!-- 이미지 갤러리 -->
-                <div class="product-gallery">
-                    <div class="main-image">
-                        <img id="mainPreview" src="../../images/product/pcgear/GV/1.jpg" alt="메인 제품 이미지">
-                    </div>
-                    <div class="thumbnail-images">
-                        <img src="../../images/product/pcgear/GV/2.jpg" alt="썸네일2" onclick="changeImage(this)">
-                        <img src="../../images/product/pcgear/GV/3.jpg" alt="썸네일3" onclick="changeImage(this)">
-                        <img src="../../images/product/pcgear/GV/4.jpg" alt="썸네일4" onclick="changeImage(this)">
-                        <img src="../../images/product/pcgear/GV/5.jpg" alt="썸네일5" onclick="changeImage(this)">
-                        <img src="../../images/product/pcgear/GV/6.jpg" alt="썸네일6" onclick="changeImage(this)">
-                        <img src="../../images/product/pcgear/GV/7.jpg" alt="썸네일7" onclick="changeImage(this)">
-                        <img src="../../images/product/pcgear/GV/8.jpg" alt="썸네일8" onclick="changeImage(this)">
-                    </div>
-                </div>
-
-                <!-- 텍스트 & 액션 -->
-                <div class="product-info">
-                    <h2 class="product-title">CREW GV 마우스</h2>
-                    <p class="product-price">₩19,000</p>
-                    <p class="product-description">
-                        자연스러운 손목 각도를 고려한 <strong>인체공학 버티컬 마우스</strong>입니다.<br>
-                        스마트 다이얼과 다양한 기능 버튼으로 화면 확대 및 스크롤 등 편리한 조작이 가능하며,<br>
-                        2.4GHz 무선과 블루투스 연결을 지원해 업무 환경에 맞게 자유롭게 사용할 수 있습니다.
-                    </p>
-
-                    <div class="product-options">
-                        <label for="switch-type">마우스</label>
-                        <select id="switch-type" name="switch-type">
-                            <option value="TS115">CREW GV</option>
-                        </select>
-                    </div>
-
-                    <div class="product-actions">
-                        <button class="btn-cart" type="button">장바구니 담기</button>
-                        <button class="btn-pay" type="button" >바로 구매하기</button>
-                    </div>
+        <!-- THUMBNAIL GALLERY -->
+        <section class="product-showcase" aria-labelledby="gallery-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-number">01 / PRODUCT IMAGES</p>
+                    <h3 id="gallery-title">제품 썸네일</h3>
                 </div>
             </div>
 
-            <!-- ▣ 상세페이지 이미지 (하단 전체 이미지) -->
-            <div class="product-description-image">
-                <div style="text-align: center;">
+            <div class="gallery-layout">
+                <div class="main-image">
+                    <img id="mainPreview" src="../../images/product/pcgear/GV/1.jpg" alt="대표 제품 이미지">
+                </div>
 
-                    <img src="https://monstar.diskn.com/f86gSK0eeA" /><br>
-                    <img src="https://monstar.diskn.com/z86gUOdTiD" /><br>
-                    <img src="https://monstar.diskn.com/Z86gSK2wPS" /><br>
-                    <img src="https://monstar.diskn.com/w86gUOG4vt" /><br>
-                    <img src="https://monstar.diskn.com/G86gSK3LeD" /><br>
-                    <img src="https://monstar.diskn.com/Y86gSK48uu" /><br>
-                    <img src="https://monstar.diskn.com/t86gSK5aYL" /><br>
-                    <img src="https://monstar.diskn.com/d86gUPcAhx" /><br>
-                    <img src="https://monstar.diskn.com/W86gSK6LlQ" /><br>
-                    <img src="https://monstar.diskn.com/R86gUM9yAB" /><br>
-                    <img src="https://monstar.diskn.com/Z86gUM9Hxt" /><br>
-                    <img src="https://monstar.diskn.com/L86CcIEGvO" /><br>
-                    <img src="https://monstar.diskn.com/w86gUQctd3" /><br>
-                    <img src="https://monstar.diskn.com/i86gSJJjkL" /><br>
-                    <img src="https://monstar.diskn.com/j86gSJKKNZ" /><br>
-                    <img src="https://monstar.diskn.com/S86gSJKTJv" /><br>
-                    <img src="https://monstar.diskn.com/Y86gSJOBaP" /><br>
-                    <img src="https://monstar.diskn.com/M86gSJQY4t" /><br>
-                    <img src="https://monstar.diskn.com/B86gSJT3eb" /><br>
-                    <img src="https://monstar.diskn.com/A86gSJTpcW" /><br>
-                    <img src="https://monstar.diskn.com/m86gSJY54S" /><br>
-                    <img src="https://monstar.diskn.com/Q86gSJYRu3" />
-                    
+                <div class="gallery-side">
+                    <div class="gallery-copy">
+                        <span>Mouse</span>
+                        <strong>CREW GV</strong>
+                        <p>이미지를 선택하면 크게 볼 수 있습니다.</p>
+                    </div>
+
+                    <div class="thumbnail-images" aria-label="제품 이미지 선택">
+                        <button type="button" class="thumbnail active" aria-label="제품 이미지 1 선택" aria-pressed="true" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/GV/1.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 2 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/GV/2.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 3 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/GV/3.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 4 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/GV/4.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 5 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/GV/5.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 6 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/GV/6.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 7 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/GV/7.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 8 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/GV/8.jpg" alt="">
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- PRODUCT DESCRIPTION -->
+        <section class="detail-section" aria-labelledby="detail-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-number">02 / DETAIL DESIGN</p>
+                    <h3 id="detail-title">상세페이지</h3>
+                </div>
+            </div>
+
+            <div class="product-description-image">
+                <img src="https://monstar.diskn.com/f86gSK0eeA" alt="상세페이지 이미지 1" loading="lazy">
+                <img src="https://monstar.diskn.com/z86gUOdTiD" alt="상세페이지 이미지 2" loading="lazy">
+                <img src="https://monstar.diskn.com/Z86gSK2wPS" alt="상세페이지 이미지 3" loading="lazy">
+                <img src="https://monstar.diskn.com/w86gUOG4vt" alt="상세페이지 이미지 4" loading="lazy">
+                <img src="https://monstar.diskn.com/G86gSK3LeD" alt="상세페이지 이미지 5" loading="lazy">
+                <img src="https://monstar.diskn.com/Y86gSK48uu" alt="상세페이지 이미지 6" loading="lazy">
+                <img src="https://monstar.diskn.com/t86gSK5aYL" alt="상세페이지 이미지 7" loading="lazy">
+                <img src="https://monstar.diskn.com/d86gUPcAhx" alt="상세페이지 이미지 8" loading="lazy">
+               <img src="https://monstar.diskn.com/W86gSK6LlQ" alt="상세페이지 이미지 9" loading="lazy">
+                <img src="https://monstar.diskn.com/R86gUM9yAB" alt="상세페이지 이미지 10" loading="lazy">
+                <img src="https://monstar.diskn.com/Z86gUM9Hxt" alt="상세페이지 이미지 11" loading="lazy">
+                <img src="https://monstar.diskn.com/L86CcIEGvO" alt="상세페이지 이미지 12" loading="lazy">
+               <img src="https://monstar.diskn.com/w86gUQctd3" alt="상세페이지 이미지 13" loading="lazy">
+                <img src="https://monstar.diskn.com/i86gSJJjkL" alt="상세페이지 이미지 14" loading="lazy">
+                <img src="https://monstar.diskn.com/j86gSJKKNZ" alt="상세페이지 이미지 15" loading="lazy">
+                <img src="https://monstar.diskn.com/S86gSJKTJv" alt="상세페이지 이미지 16" loading="lazy">
+                <img src="https://monstar.diskn.com/Y86gSJOBaP" alt="상세페이지 이미지 17" loading="lazy">
+                <img src="https://monstar.diskn.com/M86gSJQY4t" alt="상세페이지 이미지 18" loading="lazy">
+                <img src="https://monstar.diskn.com/B86gSJT3eb" alt="상세페이지 이미지 19" loading="lazy">
+                <img src="https://monstar.diskn.com/A86gSJTpcW" alt="상세페이지 이미지 20" loading="lazy">
+                <img src="https://monstar.diskn.com/m86gSJY54S" alt="상세페이지 이미지 21" loading="lazy">
+                <img src="https://monstar.diskn.com/Q86gSJYRu3" alt="상세페이지 이미지 22" loading="lazy">
+            </div>
+        </section>
+
+                 
 
         <!-- ▣ FOOTER -->
         <div id="footer">
@@ -120,8 +134,20 @@
     </div>
 
     <script>
-        function changeImage(elem) {
-            document.getElementById('mainPreview').src = elem.src;
+        function changeImage(button) {
+            const preview = document.getElementById('mainPreview');
+            const image = button.querySelector('img');
+
+            preview.src = image.src;
+            preview.alt = '제품 이미지';
+
+            document.querySelectorAll('.thumbnail').forEach(function (item) {
+                item.classList.remove('active');
+                item.setAttribute('aria-pressed', 'false');
+            });
+
+            button.classList.add('active');
+            button.setAttribute('aria-pressed', 'true');
         }
     </script>
 </body>

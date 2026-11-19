@@ -26,7 +26,7 @@
 
                 <nav id="nav">
                     <ul class="gnb">
-                        <li><a href="../sub_01.html">제품 상세페이지</a></li>
+                        <li><a href="../sub_01.html" class="active">제품 상세페이지</a></li>
                         <li><a href="../sub_02.html">패키지디자인</a></li>
                         <li><a href="../sub_03.html">배너디자인</a></li>
                         <li><a href="../sub_04.html">유튜브 썸네일</a></li>
@@ -36,67 +36,80 @@
             </div>
         </div>
 
-        <!-- ▣ PRODUCT DETAIL -->
-        <section id="product_detail">
-            <div class="product-detail-container">
-                <!-- 이미지 갤러리 -->
-                <div class="product-gallery">
-                    <div class="main-image">
-                        <img id="mainPreview" src="../../images/product/pcgear/LIVE100/1.jpg" alt="메인 제품 이미지">
-                    </div>
-                    <div class="thumbnail-images">
-                        <img src="../../images/product/pcgear/LIVE100/2.jpg" alt="썸네일2" onclick="changeImage(this)">
-                        <img src="../../images/product/pcgear/LIVE100/3.jpg" alt="썸네일3" onclick="changeImage(this)">
-                        <img src="../../images/product/pcgear/LIVE100/4.jpg" alt="썸네일4" onclick="changeImage(this)">
-                        <img src="../../images/product/pcgear/LIVE100/5.jpg" alt="썸네일4" onclick="changeImage(this)">
-                        <img src="../../images/product/pcgear/LIVE100/6.jpg" alt="썸네일4" onclick="changeImage(this)">
-                        <img src="../../images/product/pcgear/LIVE100/7.jpg" alt="썸네일4" onclick="changeImage(this)">
-                        <img src="../../images/product/pcgear/LIVE100/8.jpg" alt="썸네일4" onclick="changeImage(this)">
-                    </div>
-                </div>
-
-                <!-- 텍스트 & 액션 -->
-                <div class="product-info">
-                    <h2 class="product-title">라이브100 스피커</h2>
-                    <p class="product-price">₩19,000</p>
-                    <p class="product-description">
-                        감각적인 디자인과 풍부한 사운드를 갖춘 <strong>LED 사운드바 스피커</strong>입니다.<br>
-                        6W 스테레오 출력으로 게임과 음악, 영상 콘텐츠를 생생하게 즐길 수 있으며,<br>
-                        전면 RGB LED 조명과 핑크·오트밀 컬러로 책상 위 분위기까지 감각적으로 완성해 줍니다.
-                    </p>
-
-                    <div class="product-options">
-                        <label for="switch-type">스피커</label>
-                        <select id="switch-type" name="switch-type">
-                            <option value="TS115">라이브100</option>
-                        </select>
-                    </div>
-
-                    <div class="product-actions">
-                        <button class="btn-cart" type="button">장바구니 담기</button>
-                        <button class="btn-pay" type="button" >바로 구매하기</button>
-                    </div>
+        <!-- THUMBNAIL GALLERY -->
+        <section class="product-showcase" aria-labelledby="gallery-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-number">01 / PRODUCT IMAGES</p>
+                    <h3 id="gallery-title">제품 썸네일</h3>
                 </div>
             </div>
 
-            <!-- ▣ 상세페이지 이미지 (하단 전체 이미지) -->
-            <div class="product-description-image">
-                <div style="text-align: center;">
+            <div class="gallery-layout">
+                <div class="main-image">
+                    <img id="mainPreview" src="../../images/product/pcgear/LIVE100/1.jpg" alt="대표 제품 이미지">
+                </div>
 
-                    <img src="https://monstar.diskn.com/m7Yh4GQqjy" /><br>
-                    <img src="https://monstar.diskn.com/I7Yh4GQzCb" /><br>
-                    <img src="https://monstar.diskn.com/q7Yh4GQIHZ" /><br>
-                    <img src="https://monstar.diskn.com/c7Yh4GQRP3" /><br>
-                    <img src="https://monstar.diskn.com/e7Yh4GR1iL" /><br>
-                    <img src="https://monstar.diskn.com/r7Yh4GVJ5k" /><br>
-                    <img src="https://monstar.diskn.com/K7Yh4GW5la" /><br>
-                    <img src="https://monstar.diskn.com/o7Yh4H1g8N" /><br>
-                    <img src="https://monstar.diskn.com/x7Yh4H3PMb" /><br>
-                    <img src="https://monstar.diskn.com/F7Yh4H4Fvz" />
-                    
+                <div class="gallery-side">
+                    <div class="gallery-copy">
+                        <span>Speaker</span>
+                        <strong>LIVE100</strong>
+                        <p>이미지를 선택하면 크게 볼 수 있습니다.</p>
+                    </div>
+
+                    <div class="thumbnail-images" aria-label="제품 이미지 선택">
+                        <button type="button" class="thumbnail active" aria-label="제품 이미지 1 선택" aria-pressed="true" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/LIVE100/1.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 2 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/LIVE100/2.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 3 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/LIVE100/3.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 4 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/LIVE100/4.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 5 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/LIVE100/5.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 6 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/LIVE100/6.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 7 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/LIVE100/7.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 8 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/pcgear/LIVE100/8.jpg" alt="">
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- PRODUCT DESCRIPTION -->
+        <section class="detail-section" aria-labelledby="detail-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-number">02 / DETAIL DESIGN</p>
+                    <h3 id="detail-title">상세페이지</h3>
+                </div>
+            </div>
+
+            <div class="product-description-image">
+                <img src="https://monstar.diskn.com/m7Yh4GQqjy" alt="상세페이지 이미지 1" loading="lazy">
+                <img src="https://monstar.diskn.com/I7Yh4GQzCb" alt="상세페이지 이미지 2" loading="lazy">
+                <img src="https://monstar.diskn.com/q7Yh4GQIHZ" alt="상세페이지 이미지 3" loading="lazy">
+                <img src="https://monstar.diskn.com/c7Yh4GQRP3" alt="상세페이지 이미지 4" loading="lazy">
+                <img src="https://monstar.diskn.com/e7Yh4GR1iL" alt="상세페이지 이미지 5" loading="lazy">
+                <img src="https://monstar.diskn.com/r7Yh4GVJ5k" alt="상세페이지 이미지 6" loading="lazy">
+                <img src="https://monstar.diskn.com/K7Yh4GW5la" alt="상세페이지 이미지 7" loading="lazy">
+                <img src="https://monstar.diskn.com/o7Yh4H1g8N" alt="상세페이지 이미지 8" loading="lazy">
+                <img src="https://monstar.diskn.com/x7Yh4H3PMb" alt="상세페이지 이미지 9" loading="lazy">
+                <img src="https://monstar.diskn.com/F7Yh4H4Fvz" alt="상세페이지 이미지 10" loading="lazy">
+            </div>
+        </section>
+
 
         <!-- ▣ FOOTER -->
         <div id="footer">
@@ -108,8 +121,20 @@
     </div>
 
     <script>
-        function changeImage(elem) {
-            document.getElementById('mainPreview').src = elem.src;
+        function changeImage(button) {
+            const preview = document.getElementById('mainPreview');
+            const image = button.querySelector('img');
+
+            preview.src = image.src;
+            preview.alt = '제품 이미지';
+
+            document.querySelectorAll('.thumbnail').forEach(function (item) {
+                item.classList.remove('active');
+                item.setAttribute('aria-pressed', 'false');
+            });
+
+            button.classList.add('active');
+            button.setAttribute('aria-pressed', 'true');
         }
     </script>
 </body>

@@ -26,7 +26,7 @@
 
                 <nav id="nav">
                     <ul class="gnb">
-                        <li><a href="../sub_01.html">제품 상세페이지</a></li>
+                        <li><a href="../sub_01.html" class="active">제품 상세페이지</a></li>
                         <li><a href="../sub_02.html">패키지디자인</a></li>
                         <li><a href="../sub_03.html">배너디자인</a></li>
                         <li><a href="../sub_04.html">유튜브 썸네일</a></li>
@@ -36,78 +36,90 @@
             </div>
         </div>
 
-        <!-- ▣ PRODUCT DETAIL -->
-        <section id="product_detail">
-            <div class="product-detail-container">
-                <!-- 이미지 갤러리 -->
-                <div class="product-gallery">
-                    <div class="main-image">
-                        <img id="mainPreview" src="../../images/product/monstardeck/K21PRO/1.jpg" alt="메인 제품 이미지">
-                    </div>
-                    <div class="thumbnail-images">
-                        <img src="../../images/product/monstardeck/K21PRO/2.jpg" alt="썸네일2" onclick="changeImage(this)">
-                        <img src="../../images/product/monstardeck/K21PRO/3.jpg" alt="썸네일3" onclick="changeImage(this)">
-                        <img src="../../images/product/monstardeck/K21PRO/4.jpg" alt="썸네일4" onclick="changeImage(this)">
-                        <img src="../../images/product/monstardeck/K21PRO/5.jpg" alt="썸네일5" onclick="changeImage(this)">
-                        <img src="../../images/product/monstardeck/K21PRO/6.jpg" alt="썸네일6" onclick="changeImage(this)">
-                        <img src="../../images/product/monstardeck/K21PRO/7.jpg" alt="썸네일7" onclick="changeImage(this)">
-                        <img src="../../images/product/monstardeck/K21PRO/8.jpg" alt="썸네일8" onclick="changeImage(this)">
-                    </div>
-                </div>
-
-                <!-- 텍스트 & 액션 -->
-                <div class="product-info">
-                    <h2 class="product-title">K21PRO 커스텀패드</h2>
-                    <p class="product-price">₩36,900</p>
-                    <p class="product-description">
-                        숫자 입력과 계산을 더욱 간편하게 만들어주는 <strong>스마트 계산기 키패드</strong>입니다.<br>
-                        핫스왑을 지원하는 기계식 스위치와 RGB LED를 탑재하고,<br> 
-                        유선과 무선 연결을 모두 지원해 실용성과 편의성을 높였습니다.
-                    </p>
-
-                    <div class="product-options">
-                        <label for="switch-type">커스텀패드</label>
-                        <select id="switch-type" name="switch-type">
-                            <option value="K21PRO">K21PRO</option>
-                        </select>
-                    </div>
-
-                    <div class="product-actions">
-                        <button class="btn-cart" type="button">장바구니 담기</button>
-                        <button class="btn-pay" type="button" >바로 구매하기</button>
-                    </div>
+        <!-- THUMBNAIL GALLERY -->
+        <section class="product-showcase" aria-labelledby="gallery-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-number">01 / PRODUCT IMAGES</p>
+                    <h3 id="gallery-title">제품 썸네일</h3>
                 </div>
             </div>
 
-            <!-- ▣ 상세페이지 이미지 (하단 전체 이미지) -->
-            <div class="product-description-image">
-                <div style="text-align: center;">
-
-                    <img src="https://monstar.diskn.com/B867FW0did" /><br>
-                    <img src="https://monstar.diskn.com/e867GemwMw" /><br>
-                    <img src="https://monstar.diskn.com/t867FW0CLg" /><br>
-                    <img src="https://monstar.diskn.com/i867FW3gRD" /><br>
-                    <img src="https://monstar.diskn.com/N867FW3Gey" /><br>
-                    <img src="https://monstar.diskn.com/d867FW6VbV" /><br>
-                    <img src="https://monstar.diskn.com/V867FW7jlQ" /><br>
-                    <img src="https://monstar.diskn.com/M867FW83Oa" /><br>
-                    <img src="https://monstar.diskn.com/X867GCkALi" /><br>
-                    <img src="https://monstar.diskn.com/b867GbFtJA" /><br>
-                    <img src="https://monstar.diskn.com/v867FW8VfW" /><br>
-                    <img src="https://monstar.diskn.com/e867G4H0c2" /><br>
-                    <img src="https://monstar.diskn.com/r867FWauXT" /><br>
-                    <img src="https://monstar.diskn.com/E867FWcm66" /><br>
-                    <img src="https://monstar.diskn.com/E867FWdT5E" /><br>
-                    <img src="https://monstar.diskn.com/d867FWeDor" /><br>
-                    <img src="https://monstar.diskn.com/m867FWfedP" /><br>
-                    <img src="https://monstar.diskn.com/X867FWgejO" /><br>
-                    <img src="https://monstar.diskn.com/I867FVVNui" /><br>
-                    <img src="https://monstar.diskn.com/c867FVVW2J" /><br>
-                    <img src="https://monstar.diskn.com/o867FVW4AA" /><br>
-                    <img src="https://monstar.diskn.com/g867FVWcIU" /><br>
-                    <img src="https://monstar.diskn.com/z867FVWli0" />
-                    
+            <div class="gallery-layout">
+                <div class="main-image">
+                    <img id="mainPreview" src=../../images/product/monstardeck/K21PRO/1.jpg alt="대표 제품 이미지">
                 </div>
+
+                <div class="gallery-side">
+                    <div class="gallery-copy">
+                        <span>Custom Pad</span>
+                        <strong>K21PRO</strong>
+                        <p>이미지를 선택하면 크게 볼 수 있습니다.</p>
+                    </div>
+
+                    <div class="thumbnail-images" aria-label="제품 이미지 선택">
+                        <button type="button" class="thumbnail active" aria-label="제품 이미지 1 선택" aria-pressed="true" onclick="changeImage(this)">
+                            <img src="../../images/product/monstardeck/K21PRO/1.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 2 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/monstardeck/K21PRO/2.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 3 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/monstardeck/K21PRO/3.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 4 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/monstardeck/K21PRO/4.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 5 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/monstardeck/K21PRO/5.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 6 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/monstardeck/K21PRO/6.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 7 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/monstardeck/K21PRO/7.jpg" alt="">
+                        </button>
+                        <button type="button" class="thumbnail" aria-label="제품 이미지 8 선택" aria-pressed="false" onclick="changeImage(this)">
+                            <img src="../../images/product/monstardeck/K21PRO/8.jpg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCT DESCRIPTION -->
+        <section class="detail-section" aria-labelledby="detail-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-number">02 / DETAIL DESIGN</p>
+                    <h3 id="detail-title">상세페이지</h3>
+                </div>
+            </div>
+
+            <div class="product-description-image">
+                <img src="https://monstar.diskn.com/B867FW0did" alt="상세페이지 이미지 1" loading="lazy">
+                <img src="https://monstar.diskn.com/e867GemwMw" alt="상세페이지 이미지 2" loading="lazy">
+                <img src="https://monstar.diskn.com/t867FW0CLg" alt="상세페이지 이미지 3" loading="lazy">
+                <img src="https://monstar.diskn.com/i867FW3gRD" alt="상세페이지 이미지 4" loading="lazy">
+                <img src="https://monstar.diskn.com/N867FW3Gey" alt="상세페이지 이미지 5" loading="lazy">
+                <img src="https://monstar.diskn.com/d867FW6VbV" alt="상세페이지 이미지 6" loading="lazy">
+                <img src="https://monstar.diskn.com/V867FW7jlQ" alt="상세페이지 이미지 7" loading="lazy">
+                <img src="https://monstar.diskn.com/M867FW83Oa" alt="상세페이지 이미지 8" loading="lazy">
+                <img src="https://monstar.diskn.com/X867GCkALi" alt="상세페이지 이미지 9" loading="lazy">
+                <img src="https://monstar.diskn.com/b867GbFtJA" alt="상세페이지 이미지 10" loading="lazy">
+                <img src="https://monstar.diskn.com/v867FW8VfW" alt="상세페이지 이미지 11" loading="lazy">
+                <img src="https://monstar.diskn.com/e867G4H0c2" alt="상세페이지 이미지 12" loading="lazy">
+                <img src="https://monstar.diskn.com/r867FWauXT" alt="상세페이지 이미지 13" loading="lazy">
+                <img src="https://monstar.diskn.com/E867FWcm66" alt="상세페이지 이미지 14" loading="lazy">
+                <img src="https://monstar.diskn.com/E867FWdT5E" alt="상세페이지 이미지 15" loading="lazy">
+                <img src="https://monstar.diskn.com/d867FWeDor" alt="상세페이지 이미지 16" loading="lazy">
+                <img src="https://monstar.diskn.com/m867FWfedP" alt="상세페이지 이미지 17" loading="lazy">
+                <img src="https://monstar.diskn.com/X867FWgejO" alt="상세페이지 이미지 18" loading="lazy">
+                <img src="https://monstar.diskn.com/I867FVVNui" alt="상세페이지 이미지 19" loading="lazy">
+                <img src="https://monstar.diskn.com/c867FVVW2J" alt="상세페이지 이미지 20" loading="lazy">
+                <img src="https://monstar.diskn.com/o867FVW4AA" alt="상세페이지 이미지 21" loading="lazy">
+                <img src="https://monstar.diskn.com/g867FVWcIU" alt="상세페이지 이미지 22" loading="lazy">
+                <img src="https://monstar.diskn.com/z867FVWli0" alt="상세페이지 이미지 23" loading="lazy">
             </div>
         </section>
 
@@ -121,8 +133,20 @@
     </div>
 
     <script>
-        function changeImage(elem) {
-            document.getElementById('mainPreview').src = elem.src;
+        function changeImage(button) {
+            const preview = document.getElementById('mainPreview');
+            const image = button.querySelector('img');
+
+            preview.src = image.src;
+            preview.alt = '제품 이미지';
+
+            document.querySelectorAll('.thumbnail').forEach(function (item) {
+                item.classList.remove('active');
+                item.setAttribute('aria-pressed', 'false');
+            });
+
+            button.classList.add('active');
+            button.setAttribute('aria-pressed', 'true');
         }
     </script>
 </body>
