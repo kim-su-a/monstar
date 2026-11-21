@@ -100,7 +100,7 @@ h1{
   .akaibeu_list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start; 
     gap: 20px; /* 아이템 간 간격 */
     padding-top: 50px;
     margin: 0;
